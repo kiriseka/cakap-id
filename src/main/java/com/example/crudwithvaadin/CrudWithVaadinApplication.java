@@ -123,7 +123,7 @@ public class CrudWithVaadinApplication {
 					"\n" +
 					"30 sept"));
 
-			log.info("Customers found with findAll():");
+			log.info("Puisi found with findAll():");
 			log.info("-------------------------------");
 			for (Puisi puisi : repository.findAll()) {
 				log.info(puisi.toString());
