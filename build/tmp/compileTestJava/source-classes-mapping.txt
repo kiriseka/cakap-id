@@ -1,0 +1,7 @@
+com/example/crudwithvaadin/MainViewTests.java
+ com.example.crudwithvaadin.MainViewTests
+ com.example.crudwithvaadin.MainViewTests$Config
+com/example/crudwithvaadin/PuisiEditorTests.java
+ com.example.crudwithvaadin.PuisiEditorTests
+com/example/crudwithvaadin/CrudWithVaadinApplicationTests.java
+ com.example.crudwithvaadin.CrudWithVaadinApplicationTests
