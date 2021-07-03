@@ -20,7 +20,6 @@ public class CrudWithVaadinApplication {
 	@Bean
 	public CommandLineRunner loadData(PuisiRepository repository) {
 		return (args) -> {
-			// save a couple of customers
 			repository.save(new Puisi("Aku Ingin", "Aku ingin mencintaimu dengan sederhana\n" +
 					"dengan kata yang tak sempat diucapkan\n" +
 					"kayu kepada api yang menjadikannya abu\n" +
@@ -123,7 +122,7 @@ public class CrudWithVaadinApplication {
 					"\n" +
 					"\n" +
 					"30 sept"));
-			// fetch all customers
+
 			log.info("Customers found with findAll():");
 			log.info("-------------------------------");
 			for (Puisi puisi : repository.findAll()) {
@@ -131,21 +130,12 @@ public class CrudWithVaadinApplication {
 			}
 			log.info("");
 
-			// fetch an individual customer by ID
 			Puisi puisi = repository.findById(1L).get();
-			log.info("Customer found with findOne(1L):");
+			log.info("Puisi found with findOne(1L):");
 			log.info("--------------------------------");
 			log.info(puisi.toString());
 			log.info("");
 
-			// fetch customers by last name
-			log.info("Customer found with findByLastNameStartsWithIgnoreCase('Bauer'):");
-			log.info("--------------------------------------------");
-			for (Puisi bauer : repository
-					.findByIsiPuisiStartsWithIgnoreCase("Bauer")) {
-				log.info(bauer.toString());
-			}
-			log.info("");
 		};
 	}
 
